@@ -51,7 +51,7 @@ di5 = 0
 di6 = 0
 fly = 0.001
 fly2 = 0.001
-hp2 = 0
+hp2 = 10
 x = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30]
 distance = [20, 40, 60, 80, 100]
 direction = ["up", "down", "left", "right"]
@@ -412,6 +412,7 @@ def update():
             if switch == 1:
                 entry.image = "entry3"
                 main.stop()
+                boss.play(-1)
                 coconut.x = 100000
                 clock.schedule(nexttt, 3)
                 if keyboard.a:
